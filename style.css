@@ -1,0 +1,138 @@
+/* Reset básico para manter consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4faff; /* Fundo azul claro */
+    color: #1c1c1c;
+    line-height: 1.6;
+}
+
+/* Cabeçalho com cor principal azul */
+header {
+    background-color: #007acc; /* Azul forte */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Rodapé fixo no final da página */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #007acc;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Container dos botões na página principal */
+main.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    gap: 20px;
+}
+
+/* Estilo dos botões da home */
+a.botao {
+    padding: 12px 28px;
+    background-color: #d0e9ff;
+    color: #003d66;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid #007acc;
+}
+
+a.botao:hover {
+    background-color: #b8dcf8;
+    transform: translateY(-2px);
+}
+
+/* Estilo das seções das outras páginas */
+section {
+    background-color: white;
+    padding: 40px;
+    margin: 60px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Rótulos dos inputs */
+label {
+    margin-top: 20px;
+    font-weight: 600;
+    color: #003d66;
+}
+
+/* Inputs e textarea com fundo azul claro */
+input, textarea {
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #aad4f5;
+    border-radius: 6px;
+    font-size: 1em;
+    background-color: #f0f8ff;
+    transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #007acc;
+    outline: none;
+}
+
+/* Botão do formulário */
+button {
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005c99;
+}
+
+/* Botão para voltar para página inicial */
+a.botao-voltar {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 22px;
+    background-color: #e0f0ff;
+    color: #003d66;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    border: 2px solid #007acc;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+a.botao-voltar:hover {
+    background-color: #c8e4f8;
+    transform: translateY(-2px);
+}
